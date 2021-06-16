@@ -13,7 +13,10 @@ library(readr)
 
 ```{r}
 Soccer_data <- read_csv(file = "birthdates.csv")
-Soccer_data%>%
-  mutate(birth_months=)
+Soccer_data %>%
+  mutate(birth_dates=str_sub(value,2,11))
+```
+
+```{r}
 ```
 
